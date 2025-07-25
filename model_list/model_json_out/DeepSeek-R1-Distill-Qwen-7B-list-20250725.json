@@ -1,0 +1,17 @@
+{
+    "name": "DeepSeek-R1-Distill-Qwen-7B",
+    "model_version": "v1.0",
+    "ddk_version": "v1.0",
+    "download": "https://modelers.cn/models/HarmonyAI/Alpha/blob/main/DeepSeek-R1-Distill-Qwen-7B-OMC-20250723.zip",
+    "modified_at": "2025-07-24T18:22:16.804082583:-0800",
+    "owned_by": "Huawei",
+    "size": 3522515827,
+    "digest": "73a9644187481061f1c0ab2c468210c23dc69cec7a4b24bc3e8a1d0c777f798d",
+    "details": {
+        "format": "omc",
+        "family": "qwen2",
+        "families": "qwen",
+        "parameter_size": "7B",
+        "quantization_level": "Q4_0"
+    }
+}

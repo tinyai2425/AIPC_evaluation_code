@@ -1,0 +1,13 @@
+{
+  "model_name": "Qwen25-7B-Instruct",
+  "model_local_path": "../Alpha/Qwen25-7B-Instruct-OMC-20250723.zip",
+  "model_cloud_path": "https://modelers.cn/models/HarmonyAI/Alpha/blob/main/Qwen25-7B-Instruct-OMC-20250723.zip",
+  "family": "qwen2",
+  "families": "qwen",
+  "parameter_size": "7B",
+  "quantization_level": "Q4_0",
+  "model_format": "omc",
+  "model_version": "v1.0",
+  "ddk_version": "v1.0",
+  "owner": "Huawei"
+}
