@@ -1,0 +1,56 @@
+{
+    "LLM": [
+        {
+            "name": "DeepSeek-R1-Distill-Qwen-7B",
+            "model_version": "v1.0",
+            "ddk_version": "v1.0",
+            "download": "https://modelers.cn/coderepo/web/v1/file/HarmonyAI/Alpha/main/media/DeepSeek-R1-Distill-Qwen-7B-OMC-20250723.zip",
+            "modified_at": "2025-07-27T22:41:00.699207583:-0800",
+            "owned_by": "Huawei",
+            "size": 3522515827,
+            "digest": "73a9644187481061f1c0ab2c468210c23dc69cec7a4b24bc3e8a1d0c777f798d",
+            "details": {
+                "format": "omc",
+                "family": "qwen2",
+                "families": [
+                    "qwen2"
+                ],
+                "parameter_size": "7B",
+                "quantization_level": "Q4_0"
+            }
+        },
+        {
+            "name": "Qwen25-7B-Instruct",
+            "model_version": "v1.0",
+            "ddk_version": "v1.0",
+            "download": "https://modelers.cn/coderepo/web/v1/file/HarmonyAI/Alpha/main/media/Qwen25-7B-Instruct-OMC-20250905.zip",
+            "modified_at": "2025-09-04T23:12:12.120530583:-0800",
+            "owned_by": "Huawei",
+            "size": 3490955053,
+            "digest": "79d8a8363a94836eb1e7289f560e2ded68cb84d80c17c81c55932398e0ea1ddc",
+            "details": {
+                "format": "omc",
+                "family": "qwen2",
+                "families": [
+                    "qwen2"
+                ],
+                "parameter_size": "7B",
+                "quantization_level": "Q4_0"
+            }
+        }
+    ],
+    "WhiteList": [
+        {
+            "bundleName": "com.chatbox.ohos_electron",
+            "appId": "6918696167053501731"
+        },
+        {
+            "bundleName": "cn.coremail.chordmail_ohos",
+            "appId": "5765880207855243999"
+        },
+        {
+            "bundleName": "com.haitai.htbrowser",
+            "appId": "5765880207855263683"
+        }
+    ]
+}
