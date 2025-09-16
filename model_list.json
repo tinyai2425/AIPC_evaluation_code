@@ -23,11 +23,11 @@
             "name": "Qwen25-7B-Instruct",
             "model_version": "v1.0",
             "ddk_version": "v1.0",
-            "download": "https://modelers.cn/coderepo/web/v1/file/HarmonyAI/Alpha/main/media/Qwen25-7B-Instruct-OMC-20250906.zip",
-            "modified_at": "2025-09-05T08:43:15.105373583:-0800",
+            "download": "https://ai.gitcode.com/openharmony-models/Qwen25-7B-Instruct/resolve/master/Qwen25-7B-Instruct-OMC-20250915.zip",
+            "modified_at": "2025-09-15T01:10:53.886791583:-0800",
             "owned_by": "Huawei",
-            "size": 3492738670,
-            "digest": "4e39f5729f2966eea5710637336220bc3b688d7d93797165c300e6521b110ebf",
+            "size": 3491466458,
+            "digest": "79e6e9d10c7fb0d3812b837fbe9095faf5ed880dbc60420bcd9efcb75c871bfc",
             "details": {
                 "format": "omc",
                 "family": "qwen2",
@@ -36,6 +36,25 @@
                 ],
                 "parameter_size": "7B",
                 "quantization_level": "Q4_0"
+            }
+        },
+        {
+            "name": "bge-m3",
+            "model_version": "v1.0",
+            "ddk_version": "v1.0",
+            "download": "https://ai.gitcode.com/openharmony-models/bge-m3/resolve/master/bge-m3-OMC-20250915.zip",
+            "modified_at": "2025-09-15T18:10:57.449819583:-0800",
+            "owned_by": "Huawei",
+            "size": 1047798726,
+            "digest": "30b9411400bbb3217ebbe952bf3db01b36bc6dc94473b4fd96f1fc8db2a89921",
+            "details": {
+                "format": "omc",
+                "family": "xlm-roberta",
+                "families": [
+                    "xlm-roberta"
+                ],
+                "parameter_size": "0.57B",
+                "quantization_level": "FP32"
             }
         }
     ],
