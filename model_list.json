@@ -4,11 +4,11 @@
             "name": "DeepSeek-R1-Distill-Qwen-7B",
             "model_version": "v1.0",
             "ddk_version": "v1.0",
-            "download": "https://modelers.cn/coderepo/web/v1/file/HarmonyAI/Alpha/main/media/DeepSeek-R1-Distill-Qwen-7B-OMC-20250723.zip",
-            "modified_at": "2025-07-27T22:41:00.699207583:-0800",
+            "download": "https://ai.gitcode.com/openharmony-models/DeepSeek-R1-Distill-Qwen-7B/resolve/master/DeepSeek-R1-Distill-Qwen-7B-OMC-20251024.zip",
+            "modified_at": "2025-10-26T18:47:34.054937583:-0800",
             "owned_by": "Huawei",
-            "size": 3522515827,
-            "digest": "73a9644187481061f1c0ab2c468210c23dc69cec7a4b24bc3e8a1d0c777f798d",
+            "size": 3521134216,
+            "digest": "065ec677060a7fc868272d8cad0db8e71560785f1e332ffddbb0207d239fffe8",
             "details": {
                 "format": "omc",
                 "family": "qwen2",
@@ -23,11 +23,11 @@
             "name": "Qwen25-7B-Instruct",
             "model_version": "v1.0",
             "ddk_version": "v1.0",
-            "download": "https://ai.gitcode.com/openharmony-models/Qwen25-7B-Instruct/resolve/master/Qwen25-7B-Instruct-OMC-20250915.zip",
-            "modified_at": "2025-09-15T01:10:53.886791583:-0800",
+            "download": "https://ai.gitcode.com/openharmony-models/Qwen25-7B-Instruct/resolve/master/Qwen25-7B-Instruct-OMC-20251024.zip",
+            "modified_at": "2025-10-26T18:57:36.898819583:-0800",
             "owned_by": "Huawei",
-            "size": 3491466458,
-            "digest": "79e6e9d10c7fb0d3812b837fbe9095faf5ed880dbc60420bcd9efcb75c871bfc",
+            "size": 3491466533,
+            "digest": "bb2cb224aaa11c4c805b243e8332472e69bd09daf86eb90c1250ac793f110f0b",
             "details": {
                 "format": "omc",
                 "family": "qwen2",
@@ -42,11 +42,11 @@
             "name": "bge-m3",
             "model_version": "v1.0",
             "ddk_version": "v1.0",
-            "download": "https://ai.gitcode.com/openharmony-models/bge-m3/resolve/master/bge-m3-OMC-20250915.zip",
-            "modified_at": "2025-09-15T18:10:57.449819583:-0800",
+            "download": "https://ai.gitcode.com/openharmony-models/bge-m3/resolve/master/bge-m3-OMC-20251027.zip",
+            "modified_at": "2025-10-27T17:28:23.032603583:-0800",
             "owned_by": "Huawei",
-            "size": 1047798726,
-            "digest": "30b9411400bbb3217ebbe952bf3db01b36bc6dc94473b4fd96f1fc8db2a89921",
+            "size": 765814014,
+            "digest": "8906cc8190cdd71e5ba7af934007d5a8dbcaf503ce97b36c8372cf15b69d5673",
             "details": {
                 "format": "omc",
                 "family": "xlm-roberta",
@@ -54,7 +54,83 @@
                     "xlm-roberta"
                 ],
                 "parameter_size": "0.57B",
-                "quantization_level": "FP32"
+                "quantization_level": "Q8_0"
+            }
+        },
+        {
+            "name": "Qwen3-17B",
+            "model_version": "v1.0",
+            "ddk_version": "v1.0",
+            "download": "https://ai.gitcode.com/openharmony-models/Qwen3-1.7B/resolve/master/Qwen3-17B-OMC-20251024.zip",
+            "modified_at": "2025-10-26T18:56:45.714113583:-0800",
+            "owned_by": "Huawei",
+            "size": 967895765,
+            "digest": "8b3ee55be0cd6d4eb69a7d20f5e00122e6dd4472e1e6611cf8c3f88d056631ae",
+            "details": {
+                "format": "omc",
+                "family": "qwen3",
+                "families": [
+                    "qwen3"
+                ],
+                "parameter_size": "1.7B",
+                "quantization_level": "Q4_0"
+            }
+        },
+        {
+            "name": "Qwen3-4B",
+            "model_version": "v1.0",
+            "ddk_version": "v1.0",
+            "download": "https://ai.gitcode.com/openharmony-models/Qwen3-4B/resolve/master/Qwen3-4B-OMC-20251024.zip",
+            "modified_at": "2025-10-26T18:55:45.657798583:-0800",
+            "owned_by": "Huawei",
+            "size": 2015111979,
+            "digest": "f948a3091bf8621b1c6a9ddfdee9c2b96aec1d00f9860d4b5602e89e8598c4c1",
+            "details": {
+                "format": "omc",
+                "family": "qwen3",
+                "families": [
+                    "qwen3"
+                ],
+                "parameter_size": "4B",
+                "quantization_level": "Q4_0"
+            }
+        },
+        {
+            "name": "Qwen3-8B",
+            "model_version": "v1.0",
+            "ddk_version": "v1.0",
+            "download": "https://ai.gitcode.com/openharmony-models/Qwen3-8B/resolve/master/Qwen3-8B-OMC-20251024.zip",
+            "modified_at": "2025-10-26T18:56:24.843729583:-0800",
+            "owned_by": "Huawei",
+            "size": 3777437482,
+            "digest": "562c982107b8e5d11c925050753202eabbf481c8699aef440788649432a5b8dd",
+            "details": {
+                "format": "omc",
+                "family": "qwen3",
+                "families": [
+                    "qwen3"
+                ],
+                "parameter_size": "8B",
+                "quantization_level": "Q4_0"
+            }
+        },
+        {
+            "name": "DeepSeek-R1-Distill-Qwen-15B",
+            "model_version": "v1.0",
+            "ddk_version": "v1.0",
+            "download": "https://ai.gitcode.com/openharmony-models/DeepSeek-R1-Distill-Qwen-1.5B/resolve/master/DeepSeek-R1-Distill-Qwen-15B-OMC-20251024.zip",
+            "modified_at": "2025-10-26T18:55:11.785289583:-0800",
+            "owned_by": "Huawei",
+            "size": 876293219,
+            "digest": "387b04ecc275cbf5d5871ab583576cb487f1dcec8b7a0eace6efa543d4e46bbb",
+            "details": {
+                "format": "omc",
+                "family": "qwen2",
+                "families": [
+                    "qwen2"
+                ],
+                "parameter_size": "1.5B",
+                "quantization_level": "Q4_0"
             }
         }
     ],
