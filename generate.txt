@@ -1,0 +1,51 @@
+    def generate_and_tokenize_prompt(data_point):
+        """
+        使用 tokenizer.apply_chat_template 来构造训练样本，
+        逻辑保持与原工程一致：
+        - full_prompt：user + assistant（带 output）
+        - user_prompt：只有 user 部分（不带 output），用来做前缀 mask
+        """
+
+        # ===== 1) 组装 user 文本（等价于原来 Instruction + optional Input）=====
+        if data_point.get("input"):
+            user_content = f"{data_point['instruction']}\n\nInput:\n{data_point['input']}"
+        else:
+            user_content = data_point["instruction"]
+
+        # ===== 2) 构造带答案的 messages（等价于原来的 generate_prompt(data_point)）=====
+        messages_full = [
+            {"role": "user", "content": user_content},
+            {"role": "assistant", "content": data_point["output"]},
+        ]
+
+        full_prompt = tokenizer.apply_chat_template(
+            messages_full,
+            tokenize=False,
+            add_generation_prompt=False,  # 已经包含assistant回答
+        )
+        tokenized_full_prompt = tokenize(full_prompt)
+
+        # ===== 3) 如果不在 loss 里算输入部分，按原逻辑用“只包含 user 的 prompt”做前缀长度 =====
+        if not train_on_inputs:
+            # 只保留 user（等价于原来的 output=""）
+            messages_user_only = [
+                {"role": "user", "content": user_content},
+            ]
+
+            # 这里用 add_generation_prompt=True，让模板生成到“准备开始assistant回答”的位置
+            user_prompt = tokenizer.apply_chat_template(
+                messages_user_only,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+
+            tokenized_user_prompt = tokenize(user_prompt, add_eos_token=False)
+            user_prompt_len = len(tokenized_user_prompt["input_ids"])
+
+            # 与原工程完全同构的 mask 逻辑：前缀全部改为 -100
+            tokenized_full_prompt["labels"] = (
+                [-100] * user_prompt_len
+                + tokenized_full_prompt["labels"][user_prompt_len:]
+            )
+
+        return tokenized_full_prompt
