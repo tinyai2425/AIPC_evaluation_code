@@ -17,11 +17,11 @@
                     "qwen2"
                 ],
                 "task": [
-                    "Text Generation",
-                    "Chat"
+                    "text_generation",
+                    "chat"
                 ],
                 "function": [
-                    "Thinking"
+                    "thinking"
                 ],
                 "license": "mit",
                 "context_length": "4K",
@@ -46,7 +46,7 @@
                     "qwen2"
                 ],
                 "task": [
-                    "Text Generation",
+                    "text_generation",
                     "Chat"
                 ],
                 "function": [
@@ -60,7 +60,7 @@
         },
         {
             "name": "bge-m3",
-            "type": "Embed",
+            "type": "embed",
             "model_version": "v1.0",
             "ddk_version": "v1.0",
             "download": "https://ai.gitcode.com/openharmony-models/bge-m3/resolve/master/bge-m3-OMC-20251027.zip",
@@ -75,7 +75,7 @@
                     "xlm-roberta"
                 ],
                 "task": [
-                    "Sentence Similarity"
+                    "sentence_similarity"
                 ],
                 "function": [
                     ""
@@ -103,11 +103,11 @@
                     "qwen3"
                 ],
                 "task": [
-                    "Text Generation",
-                    "Chat"
+                    "text_generation",
+                    "chat"
                 ],
                 "function": [
-                    "Thinking"
+                    "thinking"
                 ],
                 "license": "apache-2.0",
                 "context_length": "4K",
@@ -132,11 +132,11 @@
                     "qwen3"
                 ],
                 "task": [
-                    "Text Generation",
-                    "Chat"
+                    "text_generation",
+                    "chat"
                 ],
                 "function": [
-                    "Thinking"
+                    "thinking"
                 ],
                 "license": "apache-2.0",
                 "context_length": "4K",
@@ -161,11 +161,11 @@
                     "qwen3"
                 ],
                 "task": [
-                    "Text Generation",
-                    "Chat"
+                    "text_generation",
+                    "chat"
                 ],
                 "function": [
-                    "Thinking"
+                    "thinking"
                 ],
                 "license": "apache-2.0",
                 "context_length": "4K",
@@ -190,11 +190,11 @@
                     "qwen2"
                 ],
                 "task": [
-                    "Text Generation",
-                    "Chat"
+                    "text_generation",
+                    "chat"
                 ],
                 "function": [
-                    "Thinking"
+                    "thinking"
                 ],
                 "license": "mit",
                 "context_length": "4K",
@@ -219,9 +219,9 @@
                     "qwen2"
                 ],
                 "task": [
-                    "Code",
-                    "Text Generation",
-                    "Chat"
+                    "code",
+                    "text_generation",
+                    "chat"
                 ],
                 "function": [
                     ""
